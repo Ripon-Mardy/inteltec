@@ -20,7 +20,8 @@ module.exports = {
       },
       backgroundColor : {
         "topHeaderColor" : "#242323",
-        "buttonBgColor" : "#0074BC"
+        "buttonBgColor" : "#0074BC",
+        "sectionBgColor" : "#242323"
       },
       textColor : {
         "textColor" : "#FFFFFF",
