@@ -14,7 +14,7 @@ import logo7 from '../public/image/brands/GULFTEC.webp'
 const Brands = () => {
     return (
         <>
-            <section className='mt-52  py-20 bg-white'>
+            <section className='mt-48  py-20 bg-white'>
 
 
 
