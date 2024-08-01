@@ -14,11 +14,12 @@ import logo7 from '../public/image/brands/GULFTEC.webp'
 const Brands = () => {
     return (
         <>
-            <section className='pt-36 md:pt-56 container mx-auto py-20'>
+            <section className='mt-52  py-20 bg-white'>
 
 
 
-                <div className='flex flex-col gap-5 md:flex-row md:w-10/12 md:mx-auto md:justify-start md:items-center'>
+               <div className='container mx-auto'>
+               <div className='flex flex-col gap-5 md:flex-row md:w-10/12 md:mx-auto md:justify-start md:items-center'>
                     <h1 className='font-serif text-xl text-center'>Subsidiary of</h1>
                     <Image src={logo1} width={200} height={200} className='mx-auto' />
                     <div className='grid grid-cols-3 gap-5 md:gap-10'>
@@ -31,6 +32,7 @@ const Brands = () => {
                     </div>
 
                 </div>
+               </div>
 
 
             </section>
