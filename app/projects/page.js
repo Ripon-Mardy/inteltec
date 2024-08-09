@@ -3,16 +3,23 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 
-// ===== iamges ==== 
-import project1 from '../public/image/projects/projects1.jpg'
-import project2 from '../public/image/projects/projects2.png'
-import project3 from '../public/image/projects/project3.jpg'
-import project4 from '../public/image/projects/project4.jpg'
-import project5 from '../public/image/projects/project5.jpeg'
-import project6 from '../public/image/projects/project6.jpg'
 
-const Projects = () => {
+import Navbar from '@/components/Navbar'
 
+
+// ====== iamgs ===== 
+import project1 from '../../public/image/projects/projects1.jpg'
+import project2 from '../../public/image/projects/projects2.png'
+import project3 from '../../public/image/projects/project3.jpg'
+import project4 from '../../public/image/projects/project4.jpg'
+import project5 from '../../public/image/projects/project5.jpeg'
+import project6 from '../../public/image/projects/project6.jpg'
+
+const page = ({params}) => {
+
+
+  const id = params.project;
+  
 
     const porjectsData = [
         {
@@ -44,19 +51,31 @@ const Projects = () => {
             "id": 6,
             "image": project6,
             "title" : "Zabeel Mall"
-        }
+        },
+        {
+          "id": 7,
+          "image": project6,
+          "title" : "Zabeel Mall"
+      }
     ]
 
 
-    return (
-        <>
 
-            <section className='bg-sectionBgColor py-14'>
-                <div className='container mx-auto'>
+  return (
+    <>
 
-                    <h1 className='text-5xl text-gray-300 mb-8 font-medium '>Projects</h1>
 
-                <div className='grid grid-cols-2 md:grid-cols-3 md:gap-12 gap-5'>
+
+      <div className='bg-gray-800 fixed w-full top-0 z-30'>
+        <Navbar />
+      </div>
+
+      <section className='md:pt-40 pt-28 pb-10'>
+        <div className='container mx-auto'>
+
+        <h1 className='text-5xl text-gray-600 mb-8 font-medium '>Projects</h1>
+
+        <div className='grid grid-cols-2 md:grid-cols-3 md:gap-12 gap-5'>
                     {
                         porjectsData.map((project, projectIndex) => (
                             <Link href={'#'} key={projectIndex}>
@@ -68,13 +87,14 @@ const Projects = () => {
                         ))
                     }
                 </div>
-                <Link href={'/projects'} className=' w-fit p-2 px-5 text-sm md:text-lg font-light rounded-sm border  text-white capitalize hover:bg-white hover:text-black duration-200 ease-in-out block mx-auto mt-10' >all projects</Link>
+                <Link href={'/projects'} className=' w-fit p-2 px-5 text-sm md:text-lg rounded-sm border-2 font-light capitalize hover:text-white hover:bg-black overflow-hidden duration-200 ease-in-out block mx-auto mt-10' >show more</Link>
 
-                </div>
-            </section>
 
-        </>
-    )
+
+        </div>
+      </section>
+    </>
+  )
 }
 
-export default Projects
+export default page

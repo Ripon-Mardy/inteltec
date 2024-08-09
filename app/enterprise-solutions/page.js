@@ -10,8 +10,9 @@ const page = () => {
             </div>
 
 
-            <div className='flex flex-col md:flex-row h-screen'>
-                <div className='container mx-auto md:basis-1/2 bg-topHeaderColor text-white pt-28 md:pt-40 h-auto py-10 md:pl-24'>
+            <section className='bg-topHeaderColor'>
+            <div className='flex flex-col md:flex-row gap-10 container mx-auto h-screen'>
+                <div className=' md:basis-1/2 text-white pt-28 md:pt-40 h-auto py-10'>
                     <h1 className='text-4xl md:text-5xl font-semibold font-mono border-b w-fit pb-2 border-b-gray-600'>Enterprise
                         Solutions</h1>
                     <p className='mt-5 leading-7 font-thin'>
@@ -32,6 +33,7 @@ const page = () => {
                     <video autoPlay muted loop className='h-full object-cover' src="https://video.wixstatic.com/video/f21e62_6757ebe9836e41c18d2035fa4d2bc48c/1080p/mp4/file.mp4"></video>
                 </div>
             </div>
+            </section>
 
 
 

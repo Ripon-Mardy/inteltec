@@ -10,8 +10,9 @@ const page = () => {
             </div>
 
 
-            <div className='flex flex-col md:flex-row'>
-                <div className='container mx-auto md:basis-1/2 bg-topHeaderColor text-white pt-28 md:pt-40 h-auto py-10 md:pl-24'>
+            <section className='bg-topHeaderColor'>
+            <div className='flex flex-col md:flex-row container mx-auto gap-10'>
+                <div className=' md:basis-1/2 bg-topHeaderColor text-white pt-28 md:pt-40 h-auto py-10'>
                     <h1 className='text-4xl md:text-5xl font-semibold font-mono border-b w-fit pb-2 border-b-gray-600'>Towers Deployment</h1>
                     <p className='mt-5 leading-7 font-thin'>
                         As a part of our integrated solution we conduct all the related civil work required to construct lattice towers, rooftop sites, monopoles and camouflaged towers, our activities and services: <br />
@@ -40,6 +41,7 @@ const page = () => {
                     <video autoPlay muted loop className='h-full object-cover' src="https://video.wixstatic.com/video/f21e62_cd7709d9f13c4421a4a017f03eceebf7/1080p/mp4/file.mp4"></video>
                 </div>
             </div>
+            </section>
 
 
 

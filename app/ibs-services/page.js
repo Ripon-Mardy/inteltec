@@ -14,8 +14,9 @@ const page = () => {
             </div>
 
 
-            <div className='flex flex-col md:flex-row'>
-                <div className='container mx-auto md:basis-1/2 bg-topHeaderColor text-white pt-28 md:pt-40 h-auto py-10 md:pl-24'>
+            <section className='bg-topHeaderColor'>
+            <div className='flex flex-col md:flex-row gap-10 container mx-auto'>
+                <div className=' md:basis-1/2 text-white pt-28 md:pt-40 h-auto py-10'>
                     <h1 className='text-4xl md:text-5xl font-semibold font-mono border-b w-fit pb-2 border-b-gray-600'>IBS Services</h1>
                     <p className='mt-5 leading-7 font-thin'>
                         IBS Service
@@ -34,6 +35,7 @@ const page = () => {
                     <Image width={100} height={100} layout='responsive' className=' object-cover w-full' src={ibs} />
                 </div>
             </div>
+            </section>
 
 
 
