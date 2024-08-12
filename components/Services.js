@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -15,7 +16,7 @@ const Services = () => {
     return (
         <>
 
-            <section className='relative'>
+            <section  className='relative'>
                 <video src='https://video.wixstatic.com/video/f21e62_ded834d5089c4be39db624ab8cdc304d/1080p/mp4/file.mp4' autoPlay loop muted className='absolute left-0 top-0 -z-10 object-cover w-full h-full'>
 
 

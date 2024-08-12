@@ -13,7 +13,6 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 const Navbar = ({ handleContact }) => {
 
-
     const [opennav, setOpenNav] = useState(false);
     const [isMobileMenu, setIsMobileMeu] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
@@ -35,6 +34,8 @@ useEffect(() => {
         setIsMobileMeu(!isMobileMenu)
     }
 
+
+
     return (
         <>
 
@@ -49,7 +50,9 @@ useEffect(() => {
                                 <Link href={'/'} className=' text-[17px] hover:text-hoverBgColor duration-200 ease-in-out'>Home</Link>
                                 <Link href={'/about'} className=' text-[17px] hover:text-hoverBgColor duration-200 ease-in-out'>About</Link>
                                 <div>
-                                    <Link href={'#'} onClick={mobileMenu} className=' text-[17px] hover:text-hoverBgColor duration-200 ease-in-out flex items-start justify-start p-1'>Services <IoMdArrowDropdown />
+                                    <Link href={'#'} onClick={() => {
+                                        mobileMenu()
+                                    }} className=' text-[17px] hover:text-hoverBgColor duration-200 ease-in-out flex items-start justify-start p-1'>Services <IoMdArrowDropdown />
                                     </Link>
 
                                     {
@@ -68,7 +71,7 @@ useEffect(() => {
                                     }
 
                                 </div>
-                                <Link href={'#'} className=' text-[17px] hover:text-hoverBgColor duration-200 ease-in-out'>Projects</Link>
+                                <Link href={'/projects'} className=' text-[17px] hover:text-hoverBgColor duration-200 ease-in-out'>Projects</Link>
                                 <Link href={'#'} className=' text-[17px] hover:text-hoverBgColor duration-200 ease-in-out'>Partners</Link>
                                 <Link href={'#'} onClick={handleContact} className=' text-[17px] hover:text-hoverBgColor duration-200 ease-in-out'>Contact</Link>
                             </div>
@@ -96,7 +99,7 @@ useEffect(() => {
                             </div>
                         </div>
 
-                        <Link href={'#'} className=' text-lg hover:text-hoverBgColor duration-200 ease-in-out'>Projects</Link>
+                        <Link href={'/projects'} className=' text-lg hover:text-hoverBgColor duration-200 ease-in-out'>Projects</Link>
                         <Link href={'#'} className=' text-lg hover:text-hoverBgColor duration-200 ease-in-out'>Partners</Link>
                         <Link href={'#'} onClick={handleContact} className=' text-lg hover:text-hoverBgColor duration-200 ease-in-out'>Contact</Link>
                     </ul>
